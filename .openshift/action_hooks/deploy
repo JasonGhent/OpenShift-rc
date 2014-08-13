@@ -1,0 +1,19 @@
+#!/bin/bash
+# .openshift/action_hooks/deploy
+# DO NOT FORGET THE ZEND PHP EXTENSIONS IN THE README!!
+
+unset GIT_DIR
+
+export PROJECT_DIR=/php/job_counter
+
+cd app-root/runtime/repo$PROJECT_DIR
+
+wget -qN http://getcomposer.org/composer.phar
+
+export HOME_ORIGIN=$HOME
+export HOME=$HOME/app-root/runtime/repo$PROJECT_DIR
+
+php composer.phar install
+
+export HOME=$HOME_ORIGIN
+unset PROJECT_DIR

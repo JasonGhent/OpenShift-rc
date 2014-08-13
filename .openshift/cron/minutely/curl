@@ -1,0 +1,2 @@
+#!/bin/bash
+curl http://rc-absurdnerd.rhcloud.com/job_counter/cron.php

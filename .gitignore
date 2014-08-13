@@ -1,0 +1,6 @@
+composer.lock
+libs/vendor
+*.swp
+*.swo
+misc/configs/localhost.js
+*TODO

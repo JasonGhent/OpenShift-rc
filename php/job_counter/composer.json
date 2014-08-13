@@ -1,0 +1,17 @@
+{
+    "name": "absurdnerd/php",
+    "description": "absurdnerd/php",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Jason",
+            "email": "jason@absurdnerd.com"
+        }
+    ],
+    "require": {
+			"sunra/php-simple-html-dom-parser": "v1.5.0"
+    },
+		"config": {
+			"vendor-dir":"../../libs/vendor"
+		}
+}
